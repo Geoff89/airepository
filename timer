@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Dec 10 15:38:31 2017
+
+@author: jeffnerd
+"""
+from timeit import Timer
+Timer('t=a; a=b; b=t', 'a=1; b=2').timeit()
+Timer('t=a; a=b; b=t', 'a=1; b=2').timeit()
