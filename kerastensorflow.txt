@@ -1,0 +1,61 @@
+#installing tensorflow and keras environment for deep learning
+
+#installing miniconda for the basic 
+1. Delete anaconda in the Users directory i.e contains the 
+   python environment i.e C:/ Users/jeffnerd and delete Anaconda3
+2. Go to environment in windows and remove python path and anaconda paths
+   if previously installed   
+3 go to miniconda site to install python
+
+4. Go to anaconda site and download tne miniconda version of the anaconda
+   It will contain python 3.7 by default.Choose 64 bit system
+   Installing use the default settings
+   Miniconda is in  downloads
+   
+5. After installing we need to set incompatibilty issues of python 3.7 and 3.6
+   with tensorflow
+   Create a tensorflow environment with python 3.6 not 3.7
+
+ 6. conda create --name tensorflow python=3.6
+    activate tensorflow # activating the environment
+	
+ 7 #Now install relevant packages in this environment
+     conda install jupyter
+     jupyter notebook
+
+     #The following package are needed
+     conda install scipy
+     pip install --upgrade sklearn
+	 pip install --upgrade pandas
+	 pip install --upgrade pandas-datareader
+	 pip install --upgrade matplotlib
+	 pip install --upgrade pillow #directly manipulate images
+	 pip install --upgrade requests
+	 pip install --upgrade h5py  #keras stores files
+	 pip install --upgrade psutil  #How our system is
+	 pip install --upgrade tensorflow==1.12.0
+	 pip install --upgrade keras==2.2.4
+	 conda install statsmodels
+	 
+#To see if we installed successful
+#in our tensorflow environment type -- 
+   python
+   import tensorflow as tf
+   print(tf.__verson__)
+   exit()
+   
+8  we want to make jupyter notebook aware of the environment we made
+   ensure you are in te environment tensorflow
+   
+   python -m ipykernel install --user --name tensorflow --display-name "python 3.6 (tensorflow)"
+   #run it so jupyter hub ensure us interact with the environment
+
+9. cd to C:/ai
+   enter dir  #gives you the files
+
+10. type jupyter notebook
+    #should list the files  present
+11. Now the kernel are 3.7 and 3.6 select 3.6 kernel	
+    Run the fucntions
+   
+	 
